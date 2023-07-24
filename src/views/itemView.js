@@ -1,17 +1,26 @@
-//const itemViews = require('../views/itemView');
-
-// const generateError = (errorText) => {
-//   return {
-//     success: false, 
-//     error: errorText
-//   };
-// };
-
-const generateSuccess = () => {
-  return {success: true};
+const generateErrorMsg = (errorText) => {
+  return {
+    success: false, 
+    error: errorText
+  };
 };
 
-const generateJsonResult = () => {
+const generateSuccessMsg = (msgText) => {
+  return {
+    success: true, 
+    message: msgText
+  };
+};
+
+const generateSuccess = (id) => {
+  return {
+    success: true, 
+    id: id
+  };
+};
+
+
+const generateJsonResult = (results) => {
   return {
     info: {
       count: results.length, 
@@ -20,4 +29,4 @@ const generateJsonResult = () => {
   };
 };
 
-module.exports = {generateSuccess, generateJsonResult};
+module.exports = {generateSuccess, generateJsonResult, generateErrorMsg, generateSuccessMsg};

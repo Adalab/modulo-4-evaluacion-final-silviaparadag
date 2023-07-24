@@ -4,10 +4,10 @@ const mysql = require('mysql2/promise');
 
 async function getConnection() {
   const connection = await mysql.createConnection({
-    host: process.env.DB_HOST || 'localhost',
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASS, // <-- Pon aquí tu contraseña o en el fichero /.env en la carpeta raíz
-    database: process.env.DB_NAME || 'Clase', // --> Cámbialo por tu schema de MySQL
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME
   });
 
   connection.connect();

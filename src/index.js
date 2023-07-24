@@ -5,9 +5,6 @@ const cors = require("cors");
 const env = require('dotenv');
 env.config();
 
-console.log(process.env);
-
-
 // Run SERVER
 
 const server = express();
@@ -16,15 +13,11 @@ const server = express();
 
 server.use(cors());
 server.use(express.json({limit: "100mb"}));
-// template engine
 server.set('view engine', 'ejs');
 
 
-
 // Connect DATA BASE
-const dbConn = require('./config/connection');
 const itemsController = require('./controllers/itemsController');
-
 
 
 // LISTEN server
@@ -37,42 +30,25 @@ server.listen(port, () => {
 
 // Endpoints
 
-// GET /api/items
-// sql -> SELECT
-
-server.get("/api/items", async (req, res) => {
-  itemsController.getItem(req, res);
+server.get("/recetas", async (req, res) => {
+  console.log('Holis');
+  itemsController.getRecipes(req, res);
 });
 
-
-server.get("/api/items/:eachuser", async (req, res) => {
-  itemsController.getOneItem(req, res);
+server.get("/recetas/:eachId", async (req, res) => {
+  itemsController.getOneRecipe(req, res);
 });
 
-
-// POST /api/newitem
-// sql  -> INSERT INTO () VALUES ()
-
-
-server.post("/api/newitem", async (req,res) => {
-  itemsController.createItem(req, res);
+server.post("/recetas", async (req,res) => {
+  itemsController.createRecipe(req, res);
 });
 
-
-// 3.- PUT 
-// sql -> UPDATE 
-
-server.put("/api/kittens/:eachuser/:idItem", async (req,res) => {
-itemsController.updateItem(req,res);
+server.put("/recetas/:eachId", async (req,res) => {
+itemsController.updateRecipe(req,res);
 });
 
-
-// 4.- DELETE 
-// sql -> DELETE 
-
-server.delete("/api/kittens/:eachuser/:idItem", async (req,res) => {
-
-  itemsController.deleteItem(req,res)
+server.delete("/recetas/:eachId", async (req,res) => {
+  itemsController.deleteRecipe(req,res)
 });
 
 

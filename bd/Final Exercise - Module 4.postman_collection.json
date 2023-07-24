@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "b43d178b-dbd3-40ab-af7a-60730dd4f177",
+		"name": "Final Exercise - Module 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27850851"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"nombre\": \"Falso ceviche de berberechos\",\n            \"ingredientes\": \"Berberechos, cebolla roja, lima, limón, jengibre y zanahoria.\",\n            \"instrucciones\": \"Se mezcla el zumo de lima y limón con el caldo de berberechos, y se macera con un trozo de jengibre\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/recetas/4"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"nombre\": \"Falso ceviche de berberechos\",\n            \"ingredientes\": \"Berberechos, cebolla roja, lima, limón, jengibre y zanahoria.\",\n            \"instrucciones\": \"Se mezcla el zumo de lima y limón con el caldo de berberechos, y se macera con un trozo de jengibre\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/recetas/4"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"nombre\": \"Falso ceviche de berberechos\",\n            \"ingredientes\": \"Berberechos, cebolla roja, lima, limón, jengibre y zanahoria.\",\n            \"instrucciones\": \"Se mezcla el zumo de lima y limón con el caldo de berberechos, y se macera con un trozo de jengibre\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/recetas/4"
+			},
+			"response": []
+		},
+		{
+			"name": "GET 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/recetas/2"
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/recetas"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT FALSE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n     \"nombre\": \"Ensalada de tomates a la plancha\",\n            \"ingredientes\": \"Tomates variados\"\n            \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/recetas/8"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE TRUE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/recetas/7"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE MSG success",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:4000/recetas/8"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE FALSE/ERROR",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/recetas/77"
+			},
+			"response": []
+		},
+		{
+			"name": "POST CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Espinacas salteadas con garbanzos\",\n    \"ingredientes\": \"Espinacas, garbanzos, huevo dura, AOVE y ajo.\",\n    \"instrucciones\": \"Poner las espinacas directamente en la sartén y saltearlas\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/recetas"
+			},
+			"response": []
+		}
+	]
+}
