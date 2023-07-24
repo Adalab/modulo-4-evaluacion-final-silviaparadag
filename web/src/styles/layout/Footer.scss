@@ -1,0 +1,29 @@
+@import '../core/variables';
+@import '../core/mixins';
+
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 80px;
+    padding: 20px;
+
+    @include Tablet() {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__text {
+        color: $color-primary5;
+        font-size: .7rem;
+        padding: 5px;
+        font-family: $font-main;
+        font-weight: 400;
+
+        &--link {
+            text-decoration: none;
+            color: $color-primary5;
+        }
+    }
+
+}
