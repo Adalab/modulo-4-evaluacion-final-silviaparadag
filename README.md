@@ -17,6 +17,8 @@ The final exercise for Module 4 has the following main objectives:
   - POST requests with an JSON file, with the created item.
   - PUT request for updating recipes.
   - DELETE request for removen registers.
+#### All requests have been checked with Postman
+    
 ### **Other bonus**
 - Create a .dotenv library
 - MVC architecture frame
